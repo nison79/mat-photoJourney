@@ -53,9 +53,18 @@
           <i class="material-icons">menu</i>
         </a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="#">Photos</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#photos">Photos</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#" class="tooltipped btn-floating btn-small teal lighten-3" data-tooltip ="Go to my Facebook">
+            <i class="fab fa-facebook"></i>
+          </a></li>
+          <li><a href="#" class="tooltipped btn-floating btn-small teal lighten-3" data-tooltip ="Go to my Instagram">
+            <i class="fab fa-instagram"></i>
+          </a></li>
+          <li><a href="#" class="tooltipped btn-floating btn-small teal lighten-3" data-tooltip ="Go to my Twitter">
+            <i class="fab fa-twitter"></i>
+          </a></li>
         </ul>
         <ul class="sidenav grey lighten-2" id="mobile-menu">
           <li><a href="#">Photos</a></li>
@@ -67,10 +76,10 @@
   </header>
 
   <!-- photo / grid -->
-  <section class="container section" id="photo's">
+  <section class="container section scrollspy" id="photos">
     <div class="row">
       <div class="col s12 l6">
-        <img src="./img/_GEO0013-7.jpg" alt="" class="responsive-img materialboxed">
+        <img src="./img/_GEO0013-7.jpg" alt="" class="responsive-img materialboxed z-depth-3">
       </div>
         <div class="col s12 l4 offset-l1">
           <h2 class="indigo-text text-darken-4">People</h2>
@@ -82,7 +91,7 @@
 
     <div class="row">
       <div class="col s12 l6 push-l7 offset-l1">
-        <img src="./img/_GEO0060-29.jpg" alt="" class="responsive-img materialboxed">
+        <img src="./img/_GEO0060-29.jpg" alt="" class="responsive-img materialboxed z-depth-3">
       </div>
         <div class="col s12 l4 pull-l5 right-align offset-l1">
           <h2 class="indigo-text text-darken-4">Nature</h2>
@@ -94,7 +103,7 @@
 
     <div class="row">
       <div class="col s12 l6">
-        <img src="./img/_GEO0140-2.jpg " alt="" class="responsive-img materialboxed">
+        <img src="./img/_GEO0140-2.jpg " alt="" class="responsive-img materialboxed z-depth-3">
       </div>
         <div class="col s12 l4 offset-l1">
           <h2 class="indigo-text text-darken-4">Fun</h2>
@@ -108,12 +117,12 @@
   <!-- parallax -->
   <div class="parallax-container">
     <div class="parallax">
-      <img src="./img/_GEO0045-24.jpg" alt="" class="responsive-img">
+      <img src="./img/_GEO0045-24.jpg" alt="" class="responsive-img z-depth-3">
     </div>
   </div>
 
   <!-- services / tabs -->
-  <section class="container section" id ="services">
+  <section class="container section scrollspy" id ="services">
     <div class="row">
       <div class="col s12 l4">
         <h2 class="indigo-text text-darken-4">What I Do..</h2>
@@ -151,9 +160,84 @@
   </div>
 
   <!-- contact form -->
+    <section class="section container scrollspy" id ="contact">
+      <div class="row">
+        <div class="col s12 l5">
+          <h2 class="indigo-text text-darken-4">Get In Touch</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi blanditiis quisquam, 
+            architecto asperiores, voluptatibus tempore molestias ea odio dolorem d
+            olor tenetur earum qui. Non, quo fugit hic modi sint fugiat!</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi blanditiis quisquam, 
+            architecto asperiores, voluptatibus tempore molestias ea odio dolorem d
+            olor tenetur earum qui. Non, quo fugit hic modi sint fugiat!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi blanditiis quisquam, 
+              architecto asperiores, voluptatibus tempore molestias ea odio dolorem d
+              olor tenetur earum qui. Non, quo fugit hic modi sint fugiat!</p>
+        </div>
+        <div class="col s12 l5 offset-l2">
+          <form action="">
+            <div class="input-field">
+              <i class="material-icons prefix">email</i>
+              <input type="email" id="email">
+              <label for="email">Your Email</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">message</i>
+              <textarea id="message" class="materialize-textarea" ></textarea>
+              <label for="message">Your Message</label>
+            </div>
+            <div class="input-field">
+              <input type="text" id="date" class="datepicker">
+              <label for="date">Choose the date you need me...</label>
+            </div>
+            <div class="input-field">
+              <p>Services required..</p>
+              <p>
+                <label>
+                  <input type="checkbox">
+                  <span>PhotoGraphy</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox">
+                  <span>Editing</span>
+                </label>
+              </p>
+            </div>
+            <div class="input-field right">
+              <button class="btn-large">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
 
 
   <!-- footer -->
+  <footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 l6">
+          <h5>About Me</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, inventore?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, inventore?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, inventore?</p>
+        </div>
+        <div class="col 12 l4 offest-l2">
+          <h5>Connect</h5>
+          <ul>
+            <li><a href="#" class= "grey-text text-lighten-3">Facebook</a></li>
+            <li><a href="#" class= "grey-text text-lighten-3">Instagram</a></li>
+            <li><a href="#" class= "grey-text text-lighten-3">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright grey darken-4">
+      <div class="container center-align">&copy;2020 George Nikoglou</div>
+    </div>
+  </footer>
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -164,7 +248,13 @@
       $('.materialboxed').materialbox();
       $('.parallax').parallax();
       $('.tabs').tabs();
+      $('.datepicker').datepicker({
+          
+        });
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
     });
+        
   </script>
 </body>
 </html> 
